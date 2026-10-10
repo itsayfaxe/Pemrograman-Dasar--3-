@@ -1,1 +1,7 @@
 /tempCodeRunnerFile.python
+
+*.exe
+*.o
+
+__pycache__/
+*.pyc
