@@ -21,6 +21,11 @@ int main()
             printf("Terimakasih, telah menggunakan kalkulator Faris Ramadhan    \n");
             break;
         }
+        else if (option > 5){
+            printf("Input anda salah, silahkan coba lagi\n");
+            printf("\n");
+            continue;
+        }
 
         float input1, input2;
         printf("Masukkan nilai pertama: ");
@@ -64,10 +69,7 @@ int main()
                 *result = input1 / input2;
             }
         }
-        else
-        {
-            printf("Input anda salah, silahkan coba lagi");
-        }
+
         if (result != NULL)
         {
             printf("Hasil %s antara %.2f dengan %.2f adalah %.2f", operation_name, input1, input2, *result);

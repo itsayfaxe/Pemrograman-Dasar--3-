@@ -12,6 +12,10 @@ while True:
     if option == 5:
         print("Terima kasih telah menggunakan kalkulator Faris Ramadhan")
         break
+    elif option > 5:
+        print("Input anda salah, silahkan coba lagi")
+        print()
+        continue
 
     input1 = float(input("Masukkan nilai pertama: "))
     input2 = float(input("Masukkan nilai kedua: "))
@@ -34,8 +38,6 @@ while True:
         else:
             operation_name = "Pembagian"
             result = input1 / input2
-    else:
-        print("Input anda salah, silahkan coba lagi")
 
     if result is not None:
         print(f"Hasil {operation_name} antara {input1:.2f} dengan {input2:.2f} adalah {result:.2f}")
