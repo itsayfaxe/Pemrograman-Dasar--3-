@@ -10,7 +10,7 @@ int main()
         printf("%d ", i);
     }
     printf("\n");
-    
+
     int genap;
     if (n % 2 == 0)
     {
@@ -18,7 +18,7 @@ int main()
     }
     else
     {
-        genap = genap - 1;
+        genap = n - 1;
     }
     for (i = genap; i >= 2; i -= 2)
     {
